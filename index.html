@@ -2,30 +2,36 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Интернет магазин Техномаркт</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img\favicons\152.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicon/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body>
     <header class="main-header">
       <section class=""><!--Придумать нармальны класс-->
-        <div class="logo-texmomart">
-          <img src="" alt="Техномаркт">
+        <div class="logo">
+          <img src="" alt="Логотип интернет магазина Техномаркт"><!--Подумать над логотипом-->
         </div>
 
         <div class="basket-user">
-          <a href="#">Поиск:</a>
+          <form action="https://echo.htmlacademy.ru" method="get">
+            <input type="search" name="search" value="Поиск:">
+            <button type="submit" class="visually-hidden"></button>
+          </form>
+
           <a href="#">Закладки: 0</a>
           <a href="#">Корзина: 0</a>
-        </div>
-
-        <div class="place-an-order-btn">
           <button type="button">Оформить заказ</button>
         </div>
       </section>
 
       <section class=""><!--Придумать нармальны класс-->
-        <p>
-          Интернет-магазин строительных материалов и инструментов для ремонта
-        </p>
+        <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
 
         <div class=""><!--Класс для контактов-->
           <a href="tel:+78005558628">+7 800 555-86-28</a>
@@ -42,7 +48,7 @@
         <ul>
           <li><a href="#">Главная</a></li>
           <li><a href="#">Компания</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="catalog.html" target="_blank">Каталог</a></li>
           <li><a href="#">Новости</a></li>
           <li><a href="#">Спецпредложения</a></li>
           <li><a href="#">Доставка</a></li>
@@ -51,9 +57,8 @@
       </nav>
     </header>
     <main>
-      <h1 class="visually-hidden">Интернет магазин Техномаркт</h1>
       <section>
-        <h2 class="visually-hidden">Список услуг</h2>
+        <h2 class="visually-hidden">Список товаров и услуг</h2>
         <ul>
           <li>
             <h3>Материалы</h3>
@@ -77,52 +82,58 @@
           </li>
 
           <li><!--слайдер-->
-            <div><!--Фоновое изоброжение перфораторы-->
+            <div><!--Затемненая плашка-->
               <h3>Перфораторы</h3>
               <p>Настоящие мужские игрушки</p>
             </div>
-            <a href="catalog.html">Открыть каталог</a>
+            <div><!--изоброжение перфораторы + кнопки переключатели-->
+              <img src="img/sliders/puncher.jpg" alt="Изоброжение мужчины с перфоратором" width="620" height="266">
+              <a href="catalog.html">Открыть каталог</a>
+            </div>
           </li>
-          <li><!--Подумать, два div в один li или в несколько-->
-            <div><!--Фоновои изоброжение дрели-->
+
+          <li>
+            <div><!--Затемненая плашка-->
               <h3>Дрели</h3>
               <p>Соседям на радость!</p>
             </div>
-            <a href="catalog.html">Открыть каталог</a>
+            <div><!--изоброжение дрели + кнопки переключатели-->
+              <img src="img/sliders/drills.jpg" alt="Изоброжение мужчины с дрелью" width="620" height="266">
+              <a href="catalog.html">Открыть каталог</a>
+            </div>
           </li>
         </ul>
       </section>
 
       <section>
-        <h2 class="visually-hidden">Список товаров</h2>
-        <div>
-          <h3>Популярные товары:</h3>
+        <h2>Популярные товары:</h2>
+        <p>
           <a href="#">все популярные товары</a>
-        </div>
+        </p>
 
         <div><!--Возможно тут div не нужен-->
           <ul>
             <li>
               <h3>Перфоратор BOSCH BFG 9000</h3><!--Возможно теги h3 и img обернуть в тег a-->
-              <img src="" alt="BOSCH BFG 9000">
+              <img src="img/img-puncher-bosch/Bosch-9000.png" alt="BOSCH BFG 9000" width="184" height="164">
               <p><s>32500 P.</s></p>
               <button type="button">25500 Р.</button>
             </li>
             <li>
               <h3>Перфоратор BOSCH BFG 3000</h3>
-              <img src="" alt="BOSCH BFG 3000">
+              <img src="img/img-puncher-bosch/Bosch-3000.png" alt="BOSCH BFG 3000" width="127" height="112">
               <p><s>22500 P.</s></p>
               <button type="button">15500 Р.</button>
             </li>
             <li>
               <h3>Перфоратор BOSCH BFG 6000</h3>
-              <img src="" alt="BOSCH BFG 6000">
+              <img src="img/img-puncher-bosch/Bosch-6000.png" alt="BOSCH BFG 6000" width="144" height="128">
               <p><s>30500 P.</s></p>
               <button type="button">25500 Р.</button>
             </li>
             <li>
               <h3>Перфоратор BOSCH BFG 2000</h3>
-              <img src="" alt="BOSCH BFG 2000">
+              <img src="img/img-puncher-bosch/Bosch-2000.png" alt="BOSCH BFG 2000" width="127" height="112">
               <p><s>22500 P.</s></p>
               <button type="button">12500 Р.</button>
             </li>
@@ -131,22 +142,21 @@
       </section>
 
       <section>
-        <h2 class="visually-hidden">Производители</h2>
-        <div>
-          <h3>Популярные Производители:</h3>
+        <h2>Популярные Производители:</h2>
+        <p>
           <a href="#">все производители</a>
-        </div>
+        </p>
 
         <div><!--div тут наверное не обязателен-->
           <ul>
-            <li><a href=""><img src="" alt="Производитель BOSCH"></a></li>
-            <li><a href=""><img src="" alt="Производитель Makita"></a></li>
-            <li><a href=""><img src="" alt="Производитель DeWalt"></a></li>
-            <li><a href=""><img src="" alt="Производитель Интерскол"></a></li>
-            <li><a href=""><img src="" alt="Производитель Hitachi"></a></li>
-            <li><a href=""><img src="" alt="Производитель LG"></a></li>
-            <li><a href=""><img src="" alt="Производитель AEG power solutions"></a></li>
-            <li><a href=""><img src="" alt="Производитель Metado"></a></li>
+            <li><a href="#"><img src="img/img-logo-manufacturer/bosch.svg" alt="Производитель BOSCH" width="126" height="37"></a></li>
+            <li><a href="#"><img src="img/img-logo-manufacturer/Makita.svg" alt="Производитель Makita" width="123" height="40"></a></li>
+            <li><a href="#"><img src="img/img-logo-manufacturer/DeWALT.svg" alt="Производитель DeWalt" width="146" height="44"></a></li>
+            <li><a href="#"><img src="img/img-logo-manufacturer/Интерскол.svg" alt="Производитель Интерскол" width="200" height="76"></a></li>
+            <li><a href="#"><img src="img/img-logo-manufacturer/Hitachi.svg" alt="Производитель Hitachi" width="169" height="31"></a></li>
+            <li><a href="#"><img src="img/img-logo-manufacturer/LG.svg" alt="Производитель LG" width="121" height="47"></a></li>
+            <li><a href="#"><img src="img/img-logo-manufacturer/AEG.svg" alt="Производитель AEG" width="151" height="96"></a></li>
+            <li><a href="#"><img src="img/img-logo-manufacturer/Metabo.svg" alt="Производитель Metado" width="204" height="69"></a></li>
           </ul>
         </div>
       </section>
@@ -164,7 +174,7 @@
         <div>
           <h3>Доставка</h3>
           <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
-          <img src="" alt="Изоброжение грузовика">
+          <img src="img/sliders/delivery.svg" alt="Изоброжение грузовика" width="468" height="261">
         </div>
 
         <div>
@@ -174,20 +184,20 @@
             а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
             Дом уж восстановите как-нибудь сами.
           </p>
-          <img src="" alt="Изоброжение гарантии">
+          <img src="img/sliders/warranty.svg" alt="Изоброжение гарантии" width="389" height="283">
         </div>
 
         <div>
           <h3>Кредит</h3>
           <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
-          <img src="" alt="Изоброжение кредита">
+          <img src="img/sliders/credit.svg" alt="Изоброжение кредита" width="465" height="285">
           <button type="button">Отпраавить заявку</button>
         </div>
       </section>
 
       <section>
+        <h2>Компания «Техномарт»</h2>
         <div>
-          <h3>Компания «Техномарт»</h3>
           <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
           <p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
           <ul>
@@ -203,7 +213,7 @@
         <div>
           <h3>Контакты</h3>
           <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-          <img src="" alt="Карта: Местопположение офиса, интернет магазина Техномаркт">
+          <img src="img/img-map/map.png" alt="Карта: Местопположение офиса, интернет магазина Техномаркт" width="300" height="158">
           <p>
             <a href="#">Заблудились? Напишите нам!</a>
           </p>
@@ -215,7 +225,7 @@
       <section>
         <h2 class="visually-hidden">Адресс интернет магазина Техномаркт</h2>
         <div>
-          <img src="" alt="logo-texmomart">
+          <img src="img/logo-texnomarkt.svg" alt="Логотип интернет магазина Техномаркт" width="220" height="68">
         </div>
         <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
         <p>
@@ -229,6 +239,8 @@
             <li><a href="#">Каталог</a></li>
             <li><a href="#">Доставка</a></li>
             <li><a href="#">Контакты</a></li>
+          </ul>
+          <ul>
             <li><a href="#">Материалы</a></li>
             <li><a href="#">Техника</a></li>
             <li><a href="#">Инструмент</a></li>
@@ -238,7 +250,7 @@
       </section>
 
       <section>
-        <h2 class="visually-hidden">Контакты</h2>
+        <h2 class="visually-hidden">Обратная связь</h2>
         <p>
           © 2010–2021 Компания «Техномарт» Все права защищены
         </p>
@@ -248,19 +260,19 @@
             <li>
               <a href="#">
                 <span class="visually-hidden">VK</span>
-                <img src="" alt="Изображение социальной сети">
+                <!--SVG иконка соц. сети-->
               </a>
             </li>
             <li>
               <a href="#">
                 <span class="visually-hidden">Faceboock</span>
-                <img src="" alt="Изображение социальной сети">
+                <!--SVG иконка соц. сети-->
               </a>
             </li>
             <li>
               <a href="#">
                 <span class="visually-hidden">Instagram</span>
-                <img src="" alt="Изображение социальной сети">
+                <!--SVG иконка соц. сети-->
               </a>
             </li>
           </ul>

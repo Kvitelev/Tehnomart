@@ -3,29 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <title>Каталог Перфораторов</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img\favicons\152.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicon/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
   <body>
     <header class="main-header">
       <section class=""><!--Придумать нармальны класс-->
-        <div class="logo-texmomart">
-          <a href="index.html"><img src="" alt="Техномаркт"></a>
+        <div class="logo">
+          <a href="index.html"><img src="" alt="Техномаркт"></a><!--Подумать над логотипом-->
         </div>
 
         <div class="basket-user">
-          <a href="#">Поиск:</a>
+          <form action="https://echo.htmlacademy.ru" method="get">
+            <input type="search" name="search" value="Поиск:">
+            <button type="submit" class="visually-hidden"></button>
+          </form>
+
           <a href="#">Закладки: 0</a>
           <a href="#">Корзина: 10</a><!--Корзина у главной и каталога разные-->
-        </div>
-
-        <div class="place-an-order-btn">
           <button type="button">Оформить заказ</button>
         </div>
       </section>
 
       <section class=""><!--Придумать нармальны класс-->
-        <p>
-          Интернет-магазин строительных материалов и инструментов для ремонта
-        </p>
+        <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
 
         <div class=""><!--Класс для контактов-->
           <a href="tel:+78005558628">+7 800 555-86-28</a>
@@ -66,10 +72,10 @@
         <li><a href="#">Перфораторы</a></li>
       </ul>
 
-      <h1>Перфораторы</h1>
+      <h2>Перфораторы <span class="visually-hidden">интернет магазина Техномаркт</span></h2>
 
       <section>
-        <h2>Фильтр:</h2>
+        <h3>Фильтр:</h3>
         <form action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
             <legend>Цена:</legend>
@@ -124,7 +130,7 @@
       </section>
 
       <section>
-        <h2>Сортировка:</h2>
+        <h3>Сортировка:</h3>
         <ul>
           <li><a href="#">По цене</a></li>
           <li><a href="#">По типу</a></li>
@@ -134,59 +140,59 @@
       </section>
 
       <section>
-        <h2 class="visually-hidden">Список Перфораторов</h2>
+        <h3 class="visually-hidden">Список Перфораторов</h3>
 
         <ul><!--Добавить кнопки купить и в закладки, прочитать ТЗ-->
           <li>
-            <h3>Перфоратор BOSCH BFG 6000</h3><!--Возможно теги h3 и img обернуть в тег a-->
-            <img src="" alt="BOSCH BFG 6000">
+            <h4>Перфоратор BOSCH BFG 6000</h4><!--Возможно теги h3 и img обернуть в тег a-->
+            <img src="img/img-puncher-bosch/Bosch-6000.png" alt="BOSCH BFG 6000" width="144" height="128">
             <p><s>30500 P.</s></p>
             <button type="button">25500 P.</button>
           </li>
           <li>
-            <h3>Перфоратор BOSCH BFG 6000</h3>
-            <img src="" alt="BOSCH BFG 6000">
+            <h4>Перфоратор BOSCH BFG 6000</h4>
+            <img src="img/img-puncher-bosch/Bosch-6000.png" alt="BOSCH BFG 6000" width="144" height="128">
             <p><s>30500 P</s></p>
             <button type="button">25500 P.</button>
           </li>
           <li>
-            <h3>Перфоратор BOSCH BFG 6000</h3>
-            <img src="" alt="BOSCH BFG 6000">
+            <h4>Перфоратор BOSCH BFG 6000</h4>
+            <img src="img/img-puncher-bosch/Bosch-6000.png" alt="BOSCH BFG 6000" width="144" height="128">
             <p><s>30500 P</s></p>
             <button type="button">25500 P.</button>
           </li>
           <li>
-            <h3>Перфоратор BOSCH BFG 3000</h3>
-            <img src="" alt="BOSCH BFG 3000">
+            <h4>Перфоратор BOSCH BFG 3000</h4>
+            <img src="img/img-puncher-bosch/Bosch-3000.png" alt="BOSCH BFG 3000" width="144" height="128">
             <p><s>22500 P.</s></p>
             <button type="button">15500 P.</button>
           </li>
           <li>
-            <h3>Перфоратор BOSCH BFG 6000</h3>
-            <img src="" alt="BOSCH BFG 6000">
+            <h4>Перфоратор BOSCH BFG 6000</h4>
+            <img src="img/img-puncher-bosch/Bosch-6000.png" alt="BOSCH BFG 6000" width="144" height="128">
             <p><s>30500 P</s></p>
             <button type="button">25500 P.</button>
           </li>
           <li>
-            <h3>Перфоратор BOSCH BFG 2000</h3>
-            <img src="" alt="BOSCH BFG 2000">
+            <h4>Перфоратор BOSCH BFG 2000</h4>
+            <img src="img/img-puncher-bosch/Bosch-2000.png" alt="BOSCH BFG 2000" width="127" height="112">
             <button type="button">12500 P.</button>
           </li>
           <li>
-            <h3>Перфоратор BOSCH BFG 3000</h3>
-            <img src="" alt="BOSCH BFG 3000">
+            <h4>Перфоратор BOSCH BFG 3000</h4>
+            <img src="img/img-puncher-bosch/Bosch-3000.png" alt="BOSCH BFG 3000" width="127" height="112">
             <p><s>22500 P.</s></p>
             <button type="button">15500 P.</button>
           </li>
           <li>
-            <h3>Перфоратор BOSCH BFG 6000</h3>
-            <img src="" alt="BOSCH BFG 6000">
+            <h4>Перфоратор BOSCH BFG 6000</h4>
+            <img src="img/img-puncher-bosch/Bosch-6000.png" alt="BOSCH BFG 6000" width="144" height="128">
             <p><s>30500 P</s></p>
             <button type="button">25500 P.</button>
           </li>
           <li>
-            <h3>Перфоратор BOSCH BFG 2000</h3>
-            <img src="" alt="BOSCH BFG 2000">
+            <h4>Перфоратор BOSCH BFG 2000</h4>
+            <img src="img/img-puncher-bosch/Bosch-2000.png" alt="BOSCH BFG 2000" width="127" height="112">
             <button type="button">12500 P.</button>
           </li>
         </ul>
@@ -200,7 +206,7 @@
       </section>
 
       <section>
-        <h2>Пара слов о перфораторах</h2>
+        <h3>Пара слов о перфораторах</h3>
         <p>
           Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
           Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
@@ -213,7 +219,7 @@
       <section>
         <h2 class="visually-hidden">Адресс интернет магазина Техномаркт</h2>
         <div>
-          <img src="" alt="logo-texmomart">
+          <img src="img/logo-texnomarkt.svg" alt="Логотип интернет магазина Техномаркт" width="220" height="68">
         </div>
         <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
         <p>
@@ -227,6 +233,8 @@
             <li><a href="#">Каталог</a></li>
             <li><a href="#">Доставка</a></li>
             <li><a href="#">Контакты</a></li>
+          </ul>
+          <ul>
             <li><a href="#">Материалы</a></li>
             <li><a href="#">Техника</a></li>
             <li><a href="#">Инструмент</a></li>
@@ -236,7 +244,7 @@
       </section>
 
       <section>
-        <h2 class="visually-hidden">Контакты</h2>
+        <h2 class="visually-hidden">Обратная связь</h2>
         <p>
           © 2010–2021 Компания «Техномарт» Все права защищены
         </p>
@@ -246,19 +254,19 @@
             <li>
               <a href="#">
                 <span class="visually-hidden">VK</span>
-                <img src="" alt="Изображение социальной сети">
+                <!--SVG иконка соц. сети-->
               </a>
             </li>
             <li>
               <a href="#">
                 <span class="visually-hidden">Faceboock</span>
-                <img src="" alt="Изображение социальной сети">
+                <!--SVG иконка соц. сети-->
               </a>
             </li>
             <li>
               <a href="#">
                 <span class="visually-hidden">Instagram</span>
-                <img src="" alt="Изображение социальной сети">
+                <!--SVG иконка соц. сети-->
               </a>
             </li>
           </ul>
