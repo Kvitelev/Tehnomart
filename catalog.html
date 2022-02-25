@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
 
   <link rel="icon" href="favicon.ico">
-  <link rel="icon" href="img\favicons\152.svg" type="image/svg+xml">
+  <link rel="icon" href="img/favicons/152.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/180.png">
   <link rel="manifest" href="manifest.webmanifest">
 </head>
@@ -22,11 +22,23 @@
           </div>
 
           <form class="basket-user__form" action="https://echo.htmlacademy.ru" method="get">
+            <svg class="basket-user-icons-search basket-user-icons_hover" width="17" height="17" viewBox="0 0 17 17" fill="#fff" fill-opacity="0.5" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"/>
+            </svg>
             <input class="basket-user__form-search" type="search" name="search" value="Поиск:">
             <button class="visually-hidden" type="submit"></button>
           </form>
-          <!-- Добавить иконки -->
+
+          <svg class="basket-user-icons-bookmarks basket-user-icons_hover" width="14" height="16" viewBox="0 0 14 16" fill="#fff" fill-opacity="0.5" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 15C14 15.55 13.632 15.741 13.182 15.426L7.819 11.661C7.369 11.346 6.632 11.346 6.182 11.661L0.818 15.426C0.368 15.741 0 15.55 0 15V1C0 0.45 0.45 0 1 0H13C13.55 0 14 0.45 14 1V15Z"/>
+          </svg>
           <button class="basket-user__button basket-user__button_bookmarks basket-user__button_active" type="button">Закладки: 0</button>
+
+          <svg class="basket-user-icons-cart basket-user-icons_hover" width="15" height="15" viewBox="0 0 15 15" fill="#fff" fill-opacity="0.5" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"/>
+            <path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"/>
+            <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z"/>
+          </svg>
           <button class="basket-user__button basket-user__button_basket basket-user__button_active basket-user__button_add" type="button">Корзина: 10</button>
           <button class="basket-user__button basket-user__button-place-order" type="button">Оформить заказ</button>
         </div>
@@ -36,22 +48,32 @@
         <div class="menu-site__container">
           <h1 class="main-title">Интернет-магазин <br> <span class="visually-hidden">Техномаркт</span> строительных материалов <br> и инструментов для ремонта</h1>
 
-          <!-- Добавить иконки -->
+
           <div class="menu-site__contacts">
-            <a class="contact-phone__link" href="tel:+78005558628"><p class="contact-phone"></p> +7 800 555-86-28<a>
+            <a class="contact-phone__link" href="tel:+78005558628"><p class="contact-phone">+7 800 555-86-28</p></a>
             <p class="contact-address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
           </div>
 
           <div class="authorization-user">
             <div class="authorization-user__container">
-              <!-- Добавить иконки -->
+
               <a class="authorization-user__name-link" href="#">
-                <p class="authorization-user__name">Равшан Джамшутович</p><!--В блоке авторизованного посетителя имя и иконка пользователя являются ссылкой на профайл,а иконка выхода — на страницу деавторизации.-->
+                <svg class="authorization-user__icon-user" width="20" height="18" viewBox="0 0 20 18" fill="#C5C5C5" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.881 14.166C15.737 13.431 13.625 12.5 12.674 11.776C12.017 11.275 11.904 10.158 12.157 9.361C13.275 8.458 14.021 6.884 14.021 5.083C14.021 2.276 12.221 0 10 0C7.77902 0 5.97901 2.276 5.97901 5.083C5.97901 6.884 6.72501 8.457 7.84201 9.36C8.09501 10.158 7.98302 11.275 7.32502 11.776C6.37502 12.5 4.26201 13.43 2.11801 14.166C-0.0259852 14.902 1.48343e-05 18 1.48343e-05 18H20C20 18 20.025 14.901 17.881 14.166Z"/>
+                </svg>
+                <p class="authorization-user__name">Равшан Джамшутович</p>
               </a>
-              <!-- Добавить иконки -->
+              <a href="#">
+                <svg class="authorization-user__icon-login" width="21" height="17" viewBox="0 0 21 17" fill="#C5C5C5" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.875 8.5L6 0V6H0V11H6V17L14.875 8.5Z"/>
+                  <path d="M16.986 15.01H11.959V17H16.986C19.164 17 19.99 15.19 20.015 13.974V3.028C19.99 1.811 19.164 0 16.986 0H11.959V1.99H16.986C17.825 1.99 17.978 2.671 17.996 3.047V13.951C17.979 14.327 17.825 15.01 16.986 15.01Z"/>
+                </svg>
+              </a>
+
               <div class="authorization-user__container-link">
+                <div class="decoration-point"></div>
                 <a class="authorization-user__link  authorization-user__link-products" href="#">Мои заказы</a>
-                <!--Декоративная точка-->
+
                 <a class="authorization-user__link  authorization-user__link-office" href="#">Личный кабинет</a>
               </div >
             </div>
@@ -89,12 +111,19 @@
 
     <main class="main-page main-page-catalog">
       <ul class="list-markers breadcrumbs-list">
-        <!--Иконка на главную стр. + декоративные иконки-->
+        <li class="breadcrumbs-list__item">
+          <a href="index.html">
+            <img src="img/icons/icon-home.svg" alt="Иконка на главнус страницу" width="14" height="12">
+          </a>
+          <img class="icon-right-small" src="img/icons/icon-right-small.svg" alt="" width="7" height="10">
+        </li>
         <li class="breadcrumbs-list__item">
           <a class="breadcrumbs-list__link" href="#">Каталог</a>
+          <img class="icon-right-small" src="img/icons/icon-right-small.svg" alt="" width="7" height="10">
         </li>
         <li class="breadcrumbs-list__item">
           <a class="breadcrumbs-list__link" href="#">Инструмент</a>
+          <img class="icon-right-small" src="img/icons/icon-right-small.svg" alt="" width="7" height="10">
         </li>
         <li class="breadcrumbs-list__item">
           <a class="breadcrumbs-list__link" href="#">Перфораторы</a>
@@ -114,33 +143,49 @@
           <form class="filter__form" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="filter">
               <legend class="filter__legend">Цена:</legend>
-              <input type="range">
-              <input class="filter__cost" type="text" name="min-cost" value="0">
-              <span>-</span>
-              <input class="filter__cost" type="text" name="max-cost" value="30000">
+
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div> <!--style=" width: 30%; margin-left: 20%-->
+                  </div>
+                  <div class="toggle toggle-min" tabindex="0"></div> <!--style="left: 20%-->
+                  <div class="toggle toggle-max" tabindex="0"></div> <!--style="left:50%-->
+                </div>
+
+                <div class="price-controls">
+                  <label class="min-price">
+                     <input class="price-controls__cost"  type="text" name="min-price" value="0">
+                  </label>
+                  <span class="dash">-</span>
+                  <label class="max-price">
+                     <input class="price-controls__cost" type="text" name="max-price" value="30000">
+                  </label>
+                </div>
+              </div>
             </fieldset>
 
             <fieldset class="filter">
               <legend class="filter__legend">Производители:</legend>
               <ul class="list-markers filter__list">
                 <li class="filter__item">
-                  <input class="filter__checkbox" type="checkbox" name="Bosch" id="Bosch" checked>
+                  <input class="filter__checkbox visually-hidden" type="checkbox" name="Bosch" id="Bosch" checked>
                   <label class="filter__name" for="Bosch">Bosch</label>
                 </li>
                 <li class="filter__item">
-                  <input class="filter__checkbox"  type="checkbox" name="Интерскол" id="Интерскол">
+                  <input class="filter__checkbox visually-hidden"  type="checkbox" name="Интерскол" id="Интерскол">
                   <label class="filter__name" for="Интерскол">Интерскол</label>
                 </li>
                 <li class="filter__item">
-                  <input class="filter__checkbox"  type="checkbox" name="Makita" id="Makita" checked>
+                  <input class="filter__checkbox visually-hidden"  type="checkbox" name="Makita" id="Makita" checked>
                   <label class="filter__name" for="Makita">Makita</label>
                 </li>
                 <li class="filter__item">
-                  <input class="filter__checkbox"  type="checkbox" name="Dewalt" id="Dewalt">
+                  <input class="filter__checkbox visually-hidden"  type="checkbox" name="Dewalt" id="Dewalt">
                   <label class="filter__name" for="Dewalt">Dewalt</label>
                 </li>
                 <li class="filter__item">
-                  <input class="filter__checkbox"  type="checkbox" name="Hitachi" id="Hitachi">
+                  <input class="filter__checkbox visually-hidden"  type="checkbox" name="Hitachi" id="Hitachi">
                   <label class="filter__name" for="Hitachi">Hitachi</label>
                 </li>
               </ul>
@@ -150,12 +195,12 @@
               <legend class="filter__legend">Питание:</legend>
               <ul class="list-markers filter__list">
                 <li class="filter__item">
-                  <input class="filter__radio" type="radio" name="power-supply" value="rechargeable" id="rechargeable" checked>
-                  <label class="filter__name" for="rechargeable">Аккумуляторные</label>
+                  <input class="filter__radio visually-hidden" type="radio" name="power-supply" value="rechargeable" id="rechargeable" checked>
+                  <label class="filter__name filter__name-radio" for="rechargeable">Аккумуляторные</label>
                 </li>
                 <li class="filter__item">
-                  <input class="filter__radio" type="radio" name="power-supply" value="electronetwork" id="electronetwork">
-                  <label class="filter__name" for="electronetwork">Сетевые</label>
+                  <input class="filter__radio visually-hidden" type="radio" name="power-supply" value="electronetwork" id="electronetwork">
+                  <label class="filter__name filter__name-radio" for="electronetwork">Сетевые</label>
                 </li>
               </ul>
             </fieldset>
@@ -172,115 +217,130 @@
             <li class="sorting__item">
               <a class="sorting__link sorting__link_active sorting__link-cost" href="#">По цене</a>
             </li>
-            <li lass="sorting__item">
+            <li class="sorting__item">
               <a class="sorting__link sorting__link_text-decoration sorting__link-type" href="#">По типу</a>
             </li>
-            <li lass="sorting__item">
+            <li class="sorting__item">
               <a class="sorting__link sorting__link_text-decoration sorting__link-functional" href="#">По функционалу</a>
             </li>
-            <!--Иконки сортировки-->
           </ul>
+          <button class="icon-up-dir" type="button">
+            <img src="img/icons/icon-up-dir.svg" alt="Иконка сортировки по возростанию" width="11" height="10">
+          </button>
+
+          <button class="icon-down-dir" type="button">
+            <img src="img/icons/icon-down-dir.svg" alt="Иконка сортировки по убыванию" width="11" height="10">
+          </button>
         </section>
 
         <section class="products products-catalog">
           <h3 class="visually-hidden">Список Перфораторов</h3>
 
-          <ul class="list-markers products__list"><!--Декоративная кнопка и new-->
+          <ul class="list-markers products__list">
             <li class="products__list-item">
+              <img class="icon-new visually-hidden" src="img/icons/icon-new.svg" alt="new" width="100" height="30">
               <a class="products__link" href="#"><h4 class="products__bosch">Перфоратор BOSCH BFG 6000</h4></a>
               <img class="products__bosch-img products__bosch-img-bfg-6000" src="img/img-puncher-bosch/Bosch-6000.png" alt="BOSCH BFG 6000" width="144" height="128">
               <p class="products__old-price"><s>30500 P.</s></p>
               <button class="products__button" type="button">25500 P.</button>
 
-              <div class="button__hover visually-hidden">
+              <div class="button__hover button__hover_disabled">
                 <button class="button button_hover-buy" type="button">Купить</button>
                 <button class="button button_hover-bookmarks" type="button">В закладки</button>
               </div>
             </li>
             <li class="products__list-item">
+              <img class="icon-new visually-hidden" src="img/icons/icon-new.svg" alt="new" width="100" height="30">
               <a class="products__link" href="#"> <h4 class="products__bosch">Перфоратор BOSCH BFG 6000</h4></a>
               <img class="products__bosch-img products__bosch-img-bfg-6000" src="img/img-puncher-bosch/Bosch-6000.png" alt="BOSCH BFG 6000" width="144" height="128">
               <p class="products__old-price"><s>30500 P</s></p>
               <button class="products__button" type="button">25500 P.</button>
 
-              <div class="button__hover visually-hidden">
+              <div class="button__hover button__hover_disabled">
                 <button class="button button_hover-buy" type="button">Купить</button>
                 <button class="button button_hover-bookmarks" type="button">В закладки</button>
               </div>
             </li>
             <li class="products__list-item">
+              <img class="icon-new" src="img/icons/icon-new.svg" alt="new" width="100" height="30">
               <a class="products__link" href="#"><h4 class="products__bosch">Перфоратор BOSCH BFG 6000</h4></a>
               <img class="products__bosch-img products__bosch-img-bfg-6000" src="img/img-puncher-bosch/Bosch-6000.png" alt="BOSCH BFG 6000" width="144" height="128">
               <p class="products__old-price"><s>30500 P</s></p>
               <button class="products__button" type="button">25500 P.</button>
 
-              <div class="button__hover visually-hidden">
+              <div class="button__hover button__hover_disabled">
                 <button class="button button_hover-buy" type="button">Купить</button>
                 <button class="button button_hover-bookmarks" type="button">В закладки</button>
               </div>
             </li>
             <li class="products__list-item">
+              <img class="icon-new" src="img/icons/icon-new.svg" alt="new" width="100" height="30">
               <a class="products__link" href="#"><h4 class="products__bosch">Перфоратор BOSCH BFG 3000</h4></a>
               <img class="products__bosch-img products__bosch-img-bfg-3000" src="img/img-puncher-bosch/Bosch-3000.png" alt="BOSCH BFG 3000" width="144" height="128">
               <p class="products__old-price"><s>22500 P.</s></p>
               <button class="products__button" type="button">15500 P.</button>
 
-              <div class="button__hover visually-hidden">
+              <div class="button__hover button__hover_disabled">
                 <button class="button button_hover-buy" type="button">Купить</button>
                 <button class="button button_hover-bookmarks" type="button">В закладки</button>
               </div>
             </li>
             <li class="products__list-item">
+              <img class="icon-new visually-hidden" src="img/icons/icon-new.svg" alt="new" width="100" height="30">
               <a class="products__link" href="#"><h4 class="products__bosch">Перфоратор BOSCH BFG 6000</h4></a>
               <img class="products__bosch-img products__bosch-img-bfg-6000" src="img/img-puncher-bosch/Bosch-6000.png" alt="BOSCH BFG 6000" width="144" height="128">
               <p class="products__old-price"><s>30500 P</s></p>
               <button class="products__button" type="button">25500 P.</button>
 
-              <div class="button__hover visually-hidden">
+              <div class="button__hover button__hover_disabled">
                 <button class="button button_hover-buy" type="button">Купить</button>
                 <button class="button button_hover-bookmarks" type="button">В закладки</button>
               </div>
             </li>
             <li class="products__list-item">
+              <img class="icon-new" src="img/icons/icon-new.svg" alt="new" width="100" height="30">
               <a class="products__link" href="#"><h4 class="products__bosch">Перфоратор BOSCH BFG 2000</h4></a>
               <img class="products__bosch-img products__bosch-img-bfg-2000" src="img/img-puncher-bosch/Bosch-2000.png" alt="BOSCH BFG 2000" width="127" height="112">
               <p class="products__old-price visually-hidden"><s>22500 P.</s></p>
               <button class="products__button" type="button">12500 P.</button>
 
-              <div class="button__hover visually-hidden">
+              <div class="button__hover button__hover_disabled">
                 <button class="button button_hover-buy" type="button">Купить</button>
                 <button class="button button_hover-bookmarks" type="button">В закладки</button>
               </div>
             </li>
             <li class="products__list-item">
+              <img class="icon-new" src="img/icons/icon-new.svg" alt="new" width="100" height="30">
               <a class="products__link" href="#"><h4 class="products__bosch">Перфоратор BOSCH BFG 6000</h4></a>
               <img class="products__bosch-img products__bosch-img-bfg-3000" src="img/img-puncher-bosch/Bosch-3000.png" alt="BOSCH BFG 3000" width="127" height="112">
               <p class="products__old-price"><s>22500 P.</s></p>
               <button class="products__button" type="button">15500 P.</button>
 
-              <div class="button__hover visually-hidden">
+              <div class="button__hover button__hover_disabled">
                 <button class="button button_hover-buy" type="button">Купить</button>
                 <button class="button button_hover-bookmarks" type="button">В закладки</button>
               </div>
             </li>
             <li class="products__list-item">
+              <img class="icon-new visually-hidden" src="img/icons/icon-new.svg" alt="new" width="100" height="30">
               <a class="products__link" href="#"><h4 class="products__bosch">Перфоратор BOSCH BFG 6000</h4></a>
               <img class="products__bosch-img products__bosch-img-bfg-6000" src="img/img-puncher-bosch/Bosch-6000.png" alt="BOSCH BFG 6000" width="144" height="128">
               <p class="products__old-price"><s>30500 P</s></p>
               <button class="products__button" type="button">25500 P.</button>
 
-              <div class="button__hover visually-hidden">
+              <div class="button__hover button__hover_disabled">
                 <button class="button button_hover-buy" type="button">Купить</button>
                 <button class="button button_hover-bookmarks" type="button">В закладки</button>
               </div>
             </li>
             <li class="products__list-item">
+              <img class="icon-new" src="img/icons/icon-new.svg" alt="new" width="100" height="30">
               <a class="products__link" href="#"><h4 class="products__bosch">Перфоратор BOSCH BFG 2000</h4></a>
               <img class="products__bosch-img products__bosch-img-bfg-2000" src="img/img-puncher-bosch/Bosch-2000.png" alt="BOSCH BFG 2000" width="127" height="112">
               <p class="products__old-price visually-hidden"><s>22500 P.</s></p>
               <button class="products__button" type="button">12500 P.</button>
 
-              <div class="button__hover visually-hidden">
+              <div class="button__hover button__hover_disabled">
                 <button class="button button_hover-buy" type="button">Купить</button>
                 <button class="button button_hover-bookmarks" type="button">В закладки</button>
               </div>
@@ -379,26 +439,17 @@
             <ul class="list-markers main-footer__social-list">
               <li class="main-footer__social-list-item">
                 <a class="main-footer__social-link" href="#" target="_blank">
-                  <span class="visually-hidden">VK</span>
-                  <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16.138 12.51C17.094 12.201 18.318 14.55 19.621 15.449C20.599 16.13 21.348 15.983 21.348 15.983L24.821 15.933C24.821 15.933 26.636 15.821 25.778 14.379C25.707 14.259 25.275 13.31 23.193 11.357C21.016 9.31398 21.311 9.64498 23.932 6.11298C25.529 3.95998 26.168 2.64498 25.968 2.08498C25.776 1.54598 24.603 1.68598 24.603 1.68598L20.69 1.71298C20.309 1.71398 19.986 1.83198 19.839 2.22798C19.836 2.23198 19.218 3.89398 18.394 5.30698C16.653 8.29598 15.958 8.45498 15.67 8.26798C15.009 7.83498 15.176 6.53098 15.176 5.60398C15.176 2.70698 15.608 1.49898 14.33 1.18698C13.903 1.08298 13.591 1.01498 12.502 1.00498C11.11 0.983976 9.928 1.00498 9.258 1.33398C8.813 1.55698 8.472 2.04598 8.679 2.07398C8.939 2.10898 9.522 2.23398 9.834 2.65998C10.235 3.21198 10.223 4.44898 10.223 4.44898C10.223 4.44898 10.452 7.85998 9.683 8.28298C9.155 8.57298 8.433 7.98098 6.88 5.26698C6.087 3.87898 5.488 2.34498 5.488 2.34498C5.488 2.34498 5.372 2.05998 5.162 1.90398C4.912 1.71898 4.562 1.65998 4.562 1.65998L0.848 1.68398C0.848 1.68398 0.29 1.69998 0.0850002 1.94598C-0.0969998 2.16398 0.0700002 2.61398 0.0700002 2.61398C0.0700002 2.61398 2.979 9.49498 6.273 12.961C9.293 16.143 12.725 15.932 12.725 15.932H14.28C14.28 15.932 14.749 15.878 14.989 15.62C15.213 15.38 15.203 14.929 15.203 14.929C15.203 14.929 15.172 12.82 16.138 12.51Z" fill="white"/>
-                  </svg>
+                  <img src="img/icons/icon-vk.svg" alt="VK" width="25" height="14">
                 </a>
               </li>
               <li class="main-footer__social-list-item">
                 <a class="main-footer__social-link" href="#" target="_blank">
-                  <span class="visually-hidden">Faceboock</span>
-                  <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
-                  </svg>
+                  <img src="img/icons/icon-fb.svg" alt="Faceboock" width="12" height="22">
                 </a>
               </li>
               <li class="main-footer__social-list-item">
                 <a class="main-footer__social-link" href="#" target="_blank">
-                  <span class="visually-hidden">Instagram</span>
-                  <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H18C19.65 0 21 1.35 21 3V18C21 19.65 19.65 21 18 21H3C1.35 21 0 19.65 0 18V3C0 1.35 1.35 0 3 0ZM14 10.5C14 8.57 12.43 7 10.5 7C8.57 7 7 8.57 7 10.5C7 12.43 8.57 14 10.5 14C12.43 14 14 12.43 14 10.5ZM3 18V9H4.181C4.0626 9.49127 4.00186 9.99467 4 10.5C4 14.0899 6.91015 17 10.5 17C14.0899 17 17 14.0899 17 10.5C16.9986 9.99464 16.9379 9.49118 16.819 9H18V18H3ZM14 7H18V3H14V7Z" fill="white"/>
-                  </svg>
+                  <img src="img/icons/icon-insta.svg" alt="Instagram" width="21" height="21">
                 </a>
               </li>
             </ul>
@@ -417,9 +468,12 @@
       </section>
     </footer>
 
-    <section class="product-add">
+    <section class="product-add disabled">
+      <div class="line-decoration-product-add"></div>
+      <button class="button-close product-add__botton-close" type="button">
+        <img class="button-close__img" src="img/icons/icon-close.svg" alt="Кнопка закрыть" width="21" height="21">
+      </button>
       <div class="product-add__container">
-        <!--Красная линия с вверху-->
         <!--Иконка галочки-->
         <p class="product-add__text">Товар добавлен в корзину!</p>
       </div>
@@ -428,8 +482,6 @@
         <button class="button product-add__botton_place-order button_hover button_active" type="button">Оформить заказ</button>
         <button class="button product-add__botton_continue-shopping" type="button">Продолжить покупки</button>
       </div>
-
-      <button class="button-close product-add__botton-close" type="button">Закрыть</button>
     </section>
   </body>
 </html>
