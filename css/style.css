@@ -143,11 +143,13 @@ a {
 img {
   max-width: 100%;
   height: auto;
+  object-fit: contain;
 }
 
 /* Visually Hidden */
 .visually-hidden {
   position: absolute;
+  overflow: hidden;
   clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
@@ -838,6 +840,18 @@ img {
   position: relative;
   top: 120px;
   z-index: 1;
+}
+
+.service__list-button::after {
+  content: "";
+  width: 10px;
+  height: 279px;
+  box-shadow: 15px 0px 15px 0px var(--basic-black);
+  opacity: 25%;
+  position: absolute;
+  top: -50px;
+  right: -13px;
+  transform: rotate(180deg);
 }
 
 .service__button {
@@ -1545,6 +1559,10 @@ img {
   left: 630px;
 }
 
+.icon-dir_active {
+  fill: var(--basic-red);
+}
+
 .products-catalog {
   grid-column: 2/3;
   grid-row: 1;
@@ -1747,6 +1765,7 @@ img {
 
 .basket-user-icons_hover:hover {
   fill: var(--basic-white);
+  fill-opacity: 1;
 }
 
 .authorization__icon-login:hover {
@@ -1761,8 +1780,20 @@ img {
   fill: var(--basic-hover-darck-gray);
 }
 
-.filter__checkbox:hover {
-  border: 2px solid var(--basic-active-gray);
+.filter__checkbox:hover + label::before {
+  border-color:  var(--basic-active-gray);
+}
+
+.filter__radio:hover + label::before {
+  border-color:  var(--basic-active-gray);
+}
+
+.filter__radio:hover + label::after {
+  background-color:  var(--basic-active-gray);
+}
+
+.icon-dir:hover {
+  fill: var(--basic-black);
 }
 
 .products__list-item:hover .products__bosch-img {
@@ -1855,9 +1886,27 @@ img {
   fill: var(--basic-border-gray);
 }
 
-.filter__checkbox+ label::before:active  {
+.filter__checkbox:active + label::before {
   border: 2px solid var(--basic-active-gray);
   opacity: 50%;
+}
+
+.filter__checkbox:active + label::after {
+  opacity: 50%;
+}
+
+.filter__radio:active + label::before {
+  border-color:  var(--basic-active-gray);
+  opacity: 50%;
+}
+
+.filter__radio:active + label::after {
+  background-color:  var(--basic-active-gray);
+  opacity: 50%;
+}
+
+.icon-dir:active {
+  fill: var(--basic-red);
 }
 
 /* Focus */
