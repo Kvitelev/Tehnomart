@@ -223,18 +223,10 @@ img {
   background-color: var(--basic-green);
 }
 
-.basket-user-icons-cart {
+.basket-user__icons {
   z-index: 1;
   position: relative;
-  left: 70px;
-  bottom: 5px;
-}
-
-.basket-user-icons-bookmarks {
-  z-index: 1;
-  position: relative;
-  left: 100px;
-  bottom: 4px;
+  left: 30px;
 }
 
 .menu-site {
@@ -1094,6 +1086,10 @@ img {
   min-height: 430px;
   margin: auto;
   box-shadow: 0px 4px 20px 0px var(--basic-shadow-black-15);
+  background-color: var(--basic-white);
+  position: absolute;
+  top: 2400px;
+  left: 30%;
 }
 
 .line-decoration {
@@ -1146,16 +1142,31 @@ img {
 
 .feedback-form__button-close {
   position: relative;
-  top: 10px;
   left: 570px;
+}
+
+.feedback-form__button-close::after {
+  content: "";
+  width: 21px;
+  height: 21px;
+  background: url(../img/icons/icon-close.svg) no-repeat 0px 0px;
+  position: absolute;
 }
 
 /* Map */
 .map {
   max-width: 940px;
-  min-height: 450px;
+  height: 450px;
   margin: auto;
   box-shadow: 0px 4px 20px 0px var(--basic-shadow-black-15);
+  background-color: var(--basic-white);
+  position: absolute;
+  top: 2400px;
+  left: 30px;
+}
+
+.map-ifreme {
+  border: none;
 }
 
 .line-decoration-map {
@@ -1168,6 +1179,16 @@ img {
   position: relative;
   top: 10px;
   left: 870px;
+}
+
+.map__button-close::after {
+  content: "";
+  width: 21px;
+  height: 21px;
+  background: url(../img/icons/icon-close.svg) no-repeat 0px 0px;
+  position: absolute;
+  top: -470px;
+  right: 850px;
 }
 
 /* Catalog */
@@ -1572,6 +1593,7 @@ img {
 .pagination {
   margin-top: 50px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .pagination__item {
@@ -1634,7 +1656,11 @@ img {
   min-height: 282px;
   margin: auto;
   text-align: center;
-  background: url(../img/icons/icon-mark.svg) no-repeat 70px 60px;
+  background: url(../img/icons/icon-mark.svg) no-repeat 70px 60px var(--basic-white);
+  box-shadow: 0px 4px 20px 0px var(--basic-shadow-black-15);
+  position: fixed;
+  top: 250px;
+  left: 30%;
 }
 
 .line-decoration-product-add {
@@ -1674,8 +1700,15 @@ img {
 
 .product-add__botton-close {
   position: relative;
-  top: 10px;
   left: 270px;
+}
+
+.product-add__botton-close::after {
+  content: "";
+  width: 21px;
+  height: 21px;
+  background: url(../img/icons/icon-close.svg) no-repeat 0px 0px;
+  position: absolute;
 }
 
 .button-close {
