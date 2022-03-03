@@ -30,14 +30,14 @@
           </form>
 
           <div class="basket-user__button_bookmarks">
-            <svg class="basket-user__icons basket-user-icons_hover" width="14" height="16" viewBox="0 0 14 16" fill="#fff" fill-opacity="0.5" xmlns="http://www.w3.org/2000/svg">
+            <svg aria-hidden="true" focusable="false" class="basket-user__icons basket-user-icons_hover" width="14" height="16" viewBox="0 0 14 16" fill="#fff" fill-opacity="0.5" xmlns="http://www.w3.org/2000/svg">
               <path d="M14 15C14 15.55 13.632 15.741 13.182 15.426L7.819 11.661C7.369 11.346 6.632 11.346 6.182 11.661L0.818 15.426C0.368 15.741 0 15.55 0 15V1C0 0.45 0.45 0 1 0H13C13.55 0 14 0.45 14 1V15Z"/>
             </svg>
             <button class="basket-user__button  basket-user__button_active" type="button">Закладки: 0</button>
           </div>
 
           <div class="basket-user__button_basket">
-            <svg class="basket-user__icons basket-user-icons_hover" width="15" height="15" viewBox="0 0 15 15" fill="#fff" fill-opacity="0.5" xmlns="http://www.w3.org/2000/svg">
+            <svg aria-hidden="true" focusable="false" class="basket-user__icons basket-user-icons_hover" width="15" height="15" viewBox="0 0 15 15" fill="#fff" fill-opacity="0.5" xmlns="http://www.w3.org/2000/svg">
               <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"/>
               <path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"/>
               <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z"/>
@@ -60,7 +60,7 @@
 
           <div class="authorization">
             <a class="authorization__link authorization__link-login" href="#">
-              <svg class="authorization__icon-login" width="21" height="17" viewBox="0 0 21 17" fill="#C5C5C5" xmlns="http://www.w3.org/2000/svg">
+              <svg role="img" aria-label="Иконка авторизации" class="authorization__icon-login" width="21" height="17" viewBox="0 0 21 17" fill="#C5C5C5" xmlns="http://www.w3.org/2000/svg">
                 <path d="M14.875 8.5L6 0V6H0V11H6V17L14.875 8.5Z"/>
                 <path d="M16.986 15.01H11.959V17H16.986C19.164 17 19.99 15.19 20.015 13.974V3.028C19.99 1.811 19.164 0 16.986 0H11.959V1.99H16.986C17.825 1.99 17.978 2.671 17.996 3.047V13.951C17.979 14.327 17.825 15.01 16.986 15.01Z"/>
               </svg>
@@ -156,8 +156,8 @@
                 <img src="img/icons/icon-left.svg" alt="Следующий слайдер" width="23" height="41">
               </button>
 
-              <button class="button-slider" type="button"></button>
-              <button class="button-slider button-slider__two button-slider_active" type="button"></button>
+              <button class="button-slider" type="button" aria-label="Первый слайд"></button>
+              <button class="button-slider button-slider__two button-slider_active" type="button"  aria-label="Вторй слайд"></button>
             </div>
           </li>
 
@@ -180,8 +180,8 @@
                 <img src="img/icons/icon-left.svg" alt="Следующий слайдер" width="23" height="41">
               </button>
 
-              <button class="button-slider button-slider__one button-slider_active" type="button"></button>
-              <button class="button-slider" type="button"></button>
+              <button class="button-slider button-slider__one button-slider_active" type="button" aria-label="Первый слайд"></button>
+              <button class="button-slider" type="button" aria-label="Второй слайд"></button>></button>
             </div>
           </li>
         </ul>
@@ -198,49 +198,57 @@
         <ul class="list-markers products__list">
           <li class="products__list-item">
             <img class="icon-new visually-hidden" src="img/icons/icon-new.svg" alt="new" width="100" height="30">
-            <a class="products__link" href="#"><h3 class="products__bosch">Перфоратор BOSCH <br> BFG 9000</h3></a>
+            <a class="products__link" href="#">
+              <h3 class="products__bosch">Перфоратор BOSCH <br> BFG 9000</h3>
+            </a>
             <img class="products__bosch-img products__bosch-img-bfg-9000" src="img/img-puncher-bosch/Bosch-9000.png" alt="BOSCH BFG 9000" width="184" height="164"><!--иконка new-->
             <p class="products__old-price"><s>32500 P.</s></p>
             <button class="products__button" type="button">25500 Р.</button>
 
             <div class="button__hover button__hover_disabled ">
-              <button class="button button_hover-buy" type="button">Купить</button>
+              <button class="button button_hover-buy" type="button" aria-label="Добавить в корзину BOSCH BFG 9000">Купить</button>
               <button class="button button_hover-bookmarks" type="button">В закладки</button>
             </div>
           </li>
           <li class="products__list-item">
             <img class="icon-new" src="img/icons/icon-new.svg" alt="new" width="100" height="30">
-            <a class="products__link" href="#"><h3 class="products__bosch">Перфоратор BOSCH <br> BFG 3000</h3></a>
+            <a class="products__link" href="#">
+              <h3 class="products__bosch">Перфоратор BOSCH <br> BFG 3000</h3>
+            </a>
             <img class="products__bosch-img products__bosch-img-bfg-3000" src="img/img-puncher-bosch/Bosch-3000.png" alt="BOSCH BFG 3000" width="127" height="112">
             <p class="products__old-price"><s>22500 P.</s></p>
             <button class="products__button" type="button">15500 Р.</button>
 
             <div class="button__hover button__hover_disabled">
-              <button class="button button_hover-buy" type="button">Купить</button>
+              <button class="button button_hover-buy" type="button" aria-label="Добавить в корзину BOSCH BFG 3000">Купить</button>
               <button class="button button_hover-bookmarks" type="button">В закладки</button>
             </div>
           </li>
           <li class="products__list-item">
             <img class="icon-new visually-hidden" src="img/icons/icon-new.svg" alt="new" width="100" height="30">
-            <a class="products__link" href="#"><h3 class="products__bosch">Перфоратор BOSCH <br> BFG 6000</h3></a>
+            <a class="products__link" href="#">
+              <h3 class="products__bosch">Перфоратор BOSCH <br> BFG 6000</h3>
+            </a>
             <img class="products__bosch-img products__bosch-img-bfg-6000" src="img/img-puncher-bosch/Bosch-6000.png" alt="BOSCH BFG 6000" width="144" height="128">
             <p class="products__old-price"><s>30500 P.</s></p>
             <button class="products__button" type="button">25500 Р.</button>
 
             <div class="button__hover button__hover_disabled">
-              <button class="button button_hover-buy" type="button">Купить</button>
+              <button class="button button_hover-buy" type="button" aria-label="Добавить в корзину BOSCH BFG 6000">Купить</button>
               <button class="button button_hover-bookmarks" type="button">В закладки</button>
             </div>
           </li>
           <li class="products__list-item">
             <img class="icon-new" src="img/icons/icon-new.svg" alt="new" width="100" height="30">
-            <a class="products__link" href="#"><h3 class="products__bosch">Перфоратор BOSCH <br> BFG 2000</h3></a>
+            <a class="products__link" href="#">
+              <h3 class="products__bosch">Перфоратор BOSCH <br> BFG 2000</h3>
+            </a>
             <img class="products__bosch-img products__bosch-img-bfg-2000" src="img/img-puncher-bosch/Bosch-2000.png" alt="BOSCH BFG 2000" width="127" height="112">
             <p class="products__old-price"><s>22500 P.</s></p>
             <button class="products__button" type="button">12500 Р.</button>
 
             <div class="button__hover button__hover_disabled">
-              <button class="button button_hover-buy" type="button">Купить</button>
+              <button class="button button_hover-buy" type="button" aria-label="Добавить в корзину BOSCH BFG 2000">Купить</button>
               <button class="button button_hover-bookmarks" type="button">В закладки</button>
             </div>
           </li>
@@ -381,7 +389,9 @@
         <div class="technomart-company__container">
           <h3 class="title title_black technomart-company__title">Контакты</h3>
           <p class="technomart-company__text">Вы можете забрать товар сами, <br> заехав в наш офис:</p>
-          <img class="technomart-company__img-map" src="img/img-map/map.png" alt="Карта: Местопположение офиса, интернет магазина Техномаркт" width="300" height="158">
+          <button class="button-map" type="button">
+            <img class="technomart-company__img-map" src="img/img-map/map.png" alt="Карта: Местопположение офиса, интернет магазина Техномаркт" width="300" height="158">
+          </button>
 
           <button class="button technomart-company__button button_hover button_active" type="button">Заблудились? Напишите нам!</button>
         </div>
@@ -490,20 +500,20 @@
 
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="feedback-form-container">
-          <p class="feedback-form__name">
+          <div class="feedback-form__name">
             <label class="feedback-form__label" for="user-name">Ваше имя:</label> <br>
             <input class="feedback-form__input" type="text" name="user-name" id="user-name" placeholder="Имя Фамилия">
-          </p>
+          </div>
 
-          <p class="feedback-form__email">
+          <div class="feedback-form__email">
             <label class="feedback-form__label" for="email">Ваш e-mail:</label> <br>
             <input class="feedback-form__input" type="email" name="email" id="email" placeholder="email@example.com">
-          </p>
+          </div>
 
-          <p class="feedback-form__coment">
+          <div class="feedback-form__coment">
             <label class="feedback-form__label" for="coment">Текст письма:</label> <br>
             <textarea class="feedback-form__textarea" name="coment" id="coment" placeholder="В свободной форме"></textarea>
-          </p>
+          </div>
         </div>
 
         <div class="feedback-form__container-button">

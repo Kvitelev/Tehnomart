@@ -149,11 +149,15 @@ img {
 /* Visually Hidden */
 .visually-hidden {
   position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* Class Style */
@@ -341,6 +345,7 @@ img {
 }
 
 .site-navigation__list-item-link {
+  display: block;
   color: var(--basic-white);
   text-align: center;
   padding: 20px 30px;
@@ -964,10 +969,18 @@ img {
   margin-top: 10px;
 }
 
+.button-map {
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-top: 32px;
+  width: 300px;
+  height: 158px;
+}
+
 .technomart-company__img-map {
   width: 300px;
   height: 158px;
-  margin-top: 32px;
 }
 
 .technomart-company__button {
@@ -1103,7 +1116,7 @@ img {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-  column-gap: 12px;
+  justify-content: space-between;
 }
 
 .feedback-form__label {
@@ -1119,12 +1132,17 @@ img {
   padding: 0;
 }
 
+.feedback-form__coment {
+  margin-top: 15px;
+}
+
 .feedback-form__textarea {
   border: 2px solid var(--basic-border-gray);
   font-family: "PT Sans", "Arial",  sans-serif;
   font-size: 13px;
   width: 460px;
   min-height: 114px;
+  padding: 10px;
 }
 
 .feedback-form__container-button {
@@ -1132,6 +1150,7 @@ img {
   min-height: 112px;
   display: flex;
   justify-content: center;
+  margin-top: 37px;
 }
 
 .feedback-form__button {
@@ -1725,32 +1744,39 @@ img {
 }
 
 /* Style Hover */
-.basket-user__button-place-order:hover {
+.basket-user__button-place-order:hover,
+.basket-user__button-place-order:focus {
   background-color: var(--basic-hover-green);
 }
 
-.basket-user__form-search:hover {
+.basket-user__form-search:hover,
+.basket-user__form-search:focus {
   color: var(--basic-black);
   background-color: var(--basic-white);
 }
 
-.authorization__link:hover {
+.authorization__link:hover,
+.authorization__link:focus {
   color: var(--basic-red);
 }
 
-.authorization-user__link:hover {
+.authorization-user__link:hover,
+.authorization-user__link:focus {
   color: var(--basic-red);
 }
 
-.site-navigation__list-item-link:hover {
+.site-navigation__list-item-link:hover,
+.site-navigation__list-item-link:focus {
   background-color: var(--basic-shadow-darck-blue);
 }
 
-.products-and-services__link:hover {
+.products-and-services__link:hover,
+.products-and-services__link:focus {
   background-color: var(--basic-hover-gray-opasity-30);
 }
 
-.button_hover:hover {
+.button_hover:hover,
+.button_hover:focus {
   background-color: var(--basic-hover-red);
 }
 
@@ -1758,11 +1784,13 @@ img {
   box-shadow: 0 4px 20px 0 var(--basic-shadow-black-15);
 }
 
-.button_hover-buy:hover {
+.button_hover-buy:hover,
+.button_hover-buy:focus {
   background-color: var(--basic-hover-green);
 }
 
-.button_hover-bookmarks:hover {
+.button_hover-bookmarks:hover,
+.button_hover-bookmarks:focus {
   border-color: var(--basic-viole-blue);
 }
 
@@ -1770,29 +1798,35 @@ img {
   box-shadow: 0 4px 20px 0 var(--basic-shadow-black-15);
 }
 
-.service__button:not(.service__button_active):hover {
+.service__button:not(.service__button_active):hover,
+.service__button:not(.service__button_active):focus {
   background-color: var(--basic-darck-blue);
 }
 
-.main-footer__navigation-link:hover {
+.main-footer__navigation-link:hover,
+.main-footer__navigation-link:focus {
   text-decoration: underline;
 }
 
-.main-footer__social-link:hover {
+.main-footer__social-link:hover,
+.main-footer__social-link:focus {
   color: var(--basic-white);
   background: var(--basic-red);
 }
 
-.main-footer__link:hover {
+.main-footer__link:hover,
+.main-footer__link:focus {
   text-decoration: underline;
 }
 
-.sorting__link:not(.sorting__link_active):hover {
+.sorting__link:not(.sorting__link_active):hover,
+.sorting__link:not(.sorting__link_active):focus {
   color: var(--basic-black);
   border-bottom: 1px solid var(--basic-red);
 }
 
-.pagination__item:hover {
+.pagination__item:hover,
+.pagination__item:focus {
   border: 1px solid var(--basic-border-gray);
 }
 
@@ -1813,15 +1847,18 @@ img {
   fill: var(--basic-hover-darck-gray);
 }
 
-.filter__checkbox:hover + label::before {
+.filter__checkbox:hover + label::before,
+.filter__checkbox:focus + label::before {
   border-color:  var(--basic-active-gray);
 }
 
-.filter__radio:hover + label::before {
+.filter__radio:hover + label::before,
+.filter__radio:focus + label::before {
   border-color:  var(--basic-active-gray);
 }
 
-.filter__radio:hover + label::after {
+.filter__radio:hover + label::after,
+.filter__radio:focus + label::after {
   background-color:  var(--basic-active-gray);
 }
 
