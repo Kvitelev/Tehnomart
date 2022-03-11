@@ -208,7 +208,7 @@
             <button class="products__button" type="button">25500 Р.</button>
 
             <div class="button__hover button__hover_disabled">
-              <button class="button button_hover-buy" type="button" aria-label="Добавить в корзину BOSCH BFG 9000">Купить</button>
+              <button class="button button-product-add button_hover-buy" type="button" aria-label="Добавить в корзину BOSCH BFG 9000">Купить</button>
               <button class="button button_hover-bookmarks" type="button">В закладки</button>
             </div>
           </li>
@@ -222,7 +222,7 @@
             <button class="products__button" type="button">15500 Р.</button>
 
             <div class="button__hover button__hover_disabled">
-              <button class="button button_hover-buy" type="button" aria-label="Добавить в корзину BOSCH BFG 3000">Купить</button>
+              <button class="button button-product-add button_hover-buy" type="button" aria-label="Добавить в корзину BOSCH BFG 3000">Купить</button>
               <button class="button button_hover-bookmarks" type="button">В закладки</button>
             </div>
           </li>
@@ -236,7 +236,7 @@
             <button class="products__button" type="button">25500 Р.</button>
 
             <div class="button__hover button__hover_disabled">
-              <button class="button button_hover-buy" type="button" aria-label="Добавить в корзину BOSCH BFG 6000">Купить</button>
+              <button class="button button-product-add button_hover-buy" type="button" aria-label="Добавить в корзину BOSCH BFG 6000">Купить</button>
               <button class="button button_hover-bookmarks" type="button">В закладки</button>
             </div>
           </li>
@@ -250,7 +250,7 @@
             <button class="products__button" type="button">12500 Р.</button>
 
             <div class="button__hover button__hover_disabled">
-              <button class="button button_hover-buy" type="button" aria-label="Добавить в корзину BOSCH BFG 2000">Купить</button>
+              <button class="button button-product-add button_hover-buy" type="button" aria-label="Добавить в корзину BOSCH BFG 2000">Купить</button>
               <button class="button button_hover-bookmarks" type="button">В закладки</button>
             </div>
           </li>
@@ -504,17 +504,17 @@
         <div class="feedback-form-container">
           <div class="feedback-form__name">
             <label class="feedback-form__label" for="user-name">Ваше имя:</label> <br>
-            <input class="feedback-form__input" type="text" name="user-name" id="user-name" placeholder="Имя Фамилия">
+            <input class="feedback-form__input" type="text" name="user-name" id="user-name" placeholder="Имя Фамилия" required>
           </div>
 
           <div class="feedback-form__email">
             <label class="feedback-form__label" for="email">Ваш e-mail:</label> <br>
-            <input class="feedback-form__input" type="email" name="email" id="email" placeholder="email@example.com">
+            <input class="feedback-form__input" type="email" name="email" id="email" placeholder="email@example.com" required>
           </div>
 
           <div class="feedback-form__coment">
             <label class="feedback-form__label" for="coment">Текст письма:</label> <br>
-            <textarea class="feedback-form__textarea" name="coment" id="coment" placeholder="В свободной форме"></textarea>
+            <textarea class="feedback-form__textarea" name="coment" id="coment" placeholder="В свободной форме" required></textarea>
           </div>
         </div>
 
@@ -532,6 +532,23 @@
         <span class="visually-hidden">Закрыть</span>
       </button>
     </section>
+
+    <section class="product-add disabled">
+      <div class="line-decoration-product-add"></div>
+      <button class="button-close product-add__botton-close" type="button" aria-label="Закрыть">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <div class="product-add__container">
+        <p class="product-add__text">Товар добавлен в корзину!</p>
+      </div>
+
+      <div class="product-add__container-botton">
+        <button class="button product-add__botton_place-order button_hover button_active" type="button">Оформить заказ</button>
+        <button class="button product-add__botton_continue-shopping" type="button">Продолжить покупки</button>
+      </div>
+    </section>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
 

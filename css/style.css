@@ -134,6 +134,7 @@ body {
   line-height: 24px;
   background-color: var(--basic-white);
   color: var(--basic-black);
+  position: relative;
 }
 
 a {
