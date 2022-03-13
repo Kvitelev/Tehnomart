@@ -126,6 +126,19 @@
 }
 
 /* Global Style*/
+html {
+  box-sizing: border-box;
+}
+
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+*:hover {
+  transition: 500ms;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -526,12 +539,12 @@ img {
 
 .button-slider__one {
   position: relative;
-  bottom: 43px;
+  bottom: 40px;
 }
 
 .button-slider__two {
   position: relative;
-  bottom: 43px;
+  bottom: 40px;
 }
 
 .button-slider_active::before {
@@ -1104,6 +1117,7 @@ img {
   position: absolute;
   top: 2400px;
   left: 30%;
+  animation: popup-open 2s;
 }
 
 .line-decoration {
@@ -1183,6 +1197,7 @@ img {
   position: absolute;
   top: 2400px;
   left: 30px;
+  animation: popup-open 2s;
 }
 
 .map-ifreme {
@@ -1681,6 +1696,8 @@ img {
   position: fixed;
   top: 250px;
   left: 30%;
+  z-index: 2;
+  animation: popup-open 2s;
 }
 
 .line-decoration-product-add {
@@ -1745,6 +1762,14 @@ img {
 }
 
 /* Style Hover */
+.basket-user-icons-search:hover {
+  fill-opacity: 1;
+}
+
+.basket-user__icons:hover {
+  fill-opacity: 1;
+}
+
 .basket-user__button-place-order:hover,
 .basket-user__button-place-order:focus {
   background-color: var(--basic-hover-green);
@@ -1829,11 +1854,6 @@ img {
 .pagination__item:hover,
 .pagination__item:focus {
   border: 1px solid var(--basic-border-gray);
-}
-
-.basket-user-icons_hover:hover {
-  fill: var(--basic-white);
-  fill-opacity: 1;
 }
 
 .authorization__icon-login:hover {
@@ -2003,4 +2023,47 @@ img {
 .main-blank__text {
   align-self: center;
   text-transform: uppercase;
+}
+
+/* Animation */
+@keyframes popup-open {
+  0% {
+    transform: rotateY(90deg);
+  }
+}
+
+@keyframes form-error {
+  0% {
+    transform: rotate(-5deg);
+    color: var(--basic-red);
+  }
+
+  25% {
+    transform: rotate(5deg);
+    color: var(--basic-red);
+  }
+
+  50% {
+    transform: rotate(-5deg);
+    color: var(--basic-red);
+  }
+
+  75% {
+    transform: rotate(5deg);
+    color: var(--basic-red);
+  }
+
+  80% {
+    transform: rotate(-5deg);
+    color: var(--basic-red);
+  }
+
+  100% {
+    transform: rotate(0deg);
+    color: var(--basic-red);
+  }
+}
+
+.form-error {
+  animation: form-error 500ms forwards;
 }

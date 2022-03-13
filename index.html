@@ -22,7 +22,7 @@
           </div>
 
           <form class="basket-user__form" action="https://echo.htmlacademy.ru" method="get"><!--Знак поика должен быть в фокусе + поик больше разиером-->
-            <svg class="basket-user-icons-search basket-user-icons_hover" width="17" height="17" viewBox="0 0 17 17" fill="#fff" fill-opacity="0.5" xmlns="http://www.w3.org/2000/svg">
+            <svg class="basket-user-icons-search" width="17" height="17" viewBox="0 0 17 17" fill="#fff" fill-opacity="0.5" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"/>
             </svg>
             <input class="basket-user__form-search" type="search" name="search" value="Поиск:">
@@ -30,14 +30,14 @@
           </form>
 
           <div class="basket-user__button_bookmarks">
-            <svg aria-hidden="true" focusable="false" class="basket-user__icons basket-user-icons_hover" width="14" height="16" viewBox="0 0 14 16" fill="#fff" fill-opacity="0.5" xmlns="http://www.w3.org/2000/svg">
+            <svg aria-hidden="true" focusable="false" class="basket-user__icons" width="15" height="15" viewBox="0 0 14 16" fill="#fff" fill-opacity="0.5" xmlns="http://www.w3.org/2000/svg">
               <path d="M14 15C14 15.55 13.632 15.741 13.182 15.426L7.819 11.661C7.369 11.346 6.632 11.346 6.182 11.661L0.818 15.426C0.368 15.741 0 15.55 0 15V1C0 0.45 0.45 0 1 0H13C13.55 0 14 0.45 14 1V15Z"/>
             </svg>
             <button class="basket-user__button  basket-user__button_active" type="button">Закладки: 0</button>
           </div>
 
           <div class="basket-user__button_basket">
-            <svg aria-hidden="true" focusable="false" class="basket-user__icons basket-user-icons_hover" width="15" height="15" viewBox="0 0 15 15" fill="#fff" fill-opacity="0.5" xmlns="http://www.w3.org/2000/svg">
+            <svg aria-hidden="true" focusable="false" class="basket-user__icons" width="15" height="15" viewBox="0 0 15 15" fill="#fff" fill-opacity="0.5" xmlns="http://www.w3.org/2000/svg">
               <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"/>
               <path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"/>
               <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z"/>
@@ -139,7 +139,7 @@
             </a>
           </li>
 
-          <li class="products-and-services__slider ">
+          <li class="products-and-services__slider products-and-services__slider-one">
             <div class="products-and-services__slider-container">
               <h3 class="products-and-services__slider-title">Перфораторы</h3>
               <p class="products-and-services__slider-text">Настоящие мужские игрушки</p>
@@ -151,19 +151,19 @@
               </a>
 
               <button class="button-back" type="button">
-                <img src="img/icons/icon-left.svg" alt="Преведущий слайдер, кнопка отключена" width="23" height="41">
+                <img src="img/icons/icon-left.svg" alt="Преведущий слайдер" width="23" height="41">
               </button>
 
-              <button class="button-next" type="button" disabled>
+              <button class="button-next" type="button" >
                 <img src="img/icons/icon-left.svg" alt="Следующий слайдер" width="23" height="41">
               </button>
 
-              <button class="button-slider" type="button" aria-label="Первый слайд"></button>
+              <button class="button-slider button-slider__one" type="button" aria-label="Первый слайд"></button>
               <button class="button-slider button-slider__two button-slider_active" type="button"  aria-label="Вторй слайд"></button>
             </div>
           </li>
 
-          <li class="products-and-services__slider products-and-services__slider_disabled">
+          <li class="products-and-services__slider products-and-services__slider-two products-and-services__slider_disabled">
             <div class="products-and-services__slider-container">
               <h3 class="products-and-services__slider-title">Дрели</h3>
               <p class="products-and-services__slider-text">Соседям на радость!</p>
@@ -174,8 +174,8 @@
                 <p class="products-and-services__slider-link-text">Открыть каталог</p>
               </a>
 
-              <button class="button-back" type="button" disabled>
-                <img src="img/icons/icon-left.svg" alt="Преведущий слайдер, кнопка отключена" width="23" height="41">
+              <button class="button-back" type="button">
+                <img src="img/icons/icon-left.svg" alt="Преведущий слайдер" width="23" height="41">
               </button>
 
               <button class="button-next" type="button">
@@ -183,7 +183,7 @@
               </button>
 
               <button class="button-slider button-slider__one button-slider_active" type="button" aria-label="Первый слайд"></button>
-              <button class="button-slider" type="button" aria-label="Второй слайд"></button>></button>
+              <button class="button-slider button-slider__two" type="button" aria-label="Второй слайд"></button>
             </div>
           </li>
         </ul>
@@ -321,16 +321,16 @@
 
           <fieldset class="service__list-button">
             <input class="visually-hidden" type="radio" name="service-slider" value="delivery" id="delivery" checked>
-            <label class="service__button service__button_active"  for="delivery" tabindex="0">Доставка</label>
+            <label class="service__button service__button-delivery service__button_active"  for="delivery" tabindex="0">Доставка</label>
 
             <input class="visually-hidden" type="radio" name="service-slider" value="warranty" id="warranty">
-            <label class="service__button"  for="warranty" tabindex="0">Гарантия</label>
+            <label class="service__button service__button-warranty"  for="warranty" tabindex="0">Гарантия</label>
 
             <input class="visually-hidden" type="radio" name="service-slider" value="credit" id="credit">
-            <label class="service__button"  for="credit" tabindex="0">Кредит</label>
+            <label class="service__button service__button-credit"  for="credit" tabindex="0">Кредит</label>
           </fieldset>
 
-          <div class="service__slider">
+          <div class="service__slider service__slider-delivery">
             <div class="service__slider-container">
               <h3 class="title service__title service__title-slider">Доставка</h3>
             <p class="service__text service__text-slider">
@@ -342,7 +342,7 @@
             <img class="service__slider-img service__slider-img-delivery" src="img/sliders/delivery.svg" alt="Изоброжение грузовика" width="468" height="261">
           </div>
 
-          <div class="service__slider service__slider_disabled">
+          <div class="service__slider service__slider-warranty service__slider_disabled">
             <div class="service__slider-container service__slider-container_warranty">
               <h3 class="title service__title service__title-slider">Гарантия</h3>
               <p class="service__text service__text-slider">
@@ -356,7 +356,7 @@
             <img class="service__slider-img service__slider-img-warranty" src="img/sliders/warranty.svg" alt="Изоброжение гарантии" width="389" height="283">
           </div>
 
-          <div class="service__slider service__slider_disabled">
+          <div class="service__slider service__slider-credit service__slider_disabled">
             <div class="service__slider-container service__slider-container_credit">
               <h3 class="title service__title service__title-slider">Кредит</h3>
               <p class="service__text service__text-slider">
@@ -504,17 +504,17 @@
         <div class="feedback-form-container">
           <div class="feedback-form__name">
             <label class="feedback-form__label" for="user-name">Ваше имя:</label> <br>
-            <input class="feedback-form__input" type="text" name="user-name" id="user-name" placeholder="Имя Фамилия" required>
+            <input class="feedback-form__input" type="text" name="user-name" id="user-name" placeholder="Имя Фамилия">
           </div>
 
           <div class="feedback-form__email">
             <label class="feedback-form__label" for="email">Ваш e-mail:</label> <br>
-            <input class="feedback-form__input" type="email" name="email" id="email" placeholder="email@example.com" required>
+            <input class="feedback-form__input feedback-form__input-email" type="email" name="email" id="email" placeholder="email@example.com">
           </div>
 
           <div class="feedback-form__coment">
             <label class="feedback-form__label" for="coment">Текст письма:</label> <br>
-            <textarea class="feedback-form__textarea" name="coment" id="coment" placeholder="В свободной форме" required></textarea>
+            <textarea class="feedback-form__textarea" name="coment" id="coment" placeholder="В свободной форме"></textarea>
           </div>
         </div>
 
@@ -549,6 +549,8 @@
     </section>
 
     <script src="js/script.js"></script>
+    <script src="js/product-slider-script.js"></script>
+    <script src="js/service-slider-script.js"></script>
   </body>
 </html>
 
